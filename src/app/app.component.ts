@@ -10,8 +10,10 @@ export class AppComponent {
   modalWindow = false;
   onClose() {
     this.modalWindow = false;
+    document.body.style.overflow = 'auto';
   };
   onOpen() {
     this.modalWindow = true;
+    document.body.style.overflow = 'hidden';
   }
 }

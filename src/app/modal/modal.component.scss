@@ -52,7 +52,7 @@ $main-color: #50545e;
   .close-icon {
     position: absolute;
     color: white;
-    top: 10px;
+    top: 16px;
     right: 10px;
     font-size: 20px;
     cursor: pointer;
@@ -71,4 +71,18 @@ input[disabled] {
 }
 input.ng-touched.ng-invalid.ng-dirty, textarea.ng-touched.ng-invalid.ng-dirty {
   border: 2px solid red;
+}
+.bar1 {
+  width: 20px;
+  height: 4px;
+  transform: rotate(45deg);
+  background: white;
+}
+.bar2 {
+  position: relative;
+  width: 20px;
+  height: 4px;
+  transform: rotate(135deg);
+  background: white;
+  bottom: 4px;
 }

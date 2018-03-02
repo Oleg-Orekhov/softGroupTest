@@ -3,7 +3,10 @@
   <div class="modal">
     <div class="head">
       <span class="contact">Contact Us</span>
-      <span class="close-icon" (click)="close()">X</span>
+      <span class="close-icon" (click)="close()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+      </span>
     </div>
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div>
