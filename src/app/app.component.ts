@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  modalWindow = false;
+  onClose() {
+    this.modalWindow = false;
+  };
+  onOpen() {
+    this.modalWindow = true;
+  }
 }

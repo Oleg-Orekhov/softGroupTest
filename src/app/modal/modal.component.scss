@@ -1,0 +1,74 @@
+$main-color: #50545e;
+
+.dark-background {
+  position: fixed;
+  background: black;
+  opacity: 0.5;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+.modal {
+  position: fixed;
+  background: white;
+  width: 60%;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 0 auto;
+  top: 10%;
+  left: 0;
+  right: 0;
+  form {
+    padding: 30px;
+    div {
+      margin-bottom: 15px;
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+.head {
+  background: $main-color;
+  padding: 30px;
+  position: relative;
+  .contact {
+    display: block;
+    color: white;
+    margin: 0 auto;
+    font-size: 30px;
+  }
+  .close-icon {
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+.details-button {
+  background-color: $main-color;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+input[disabled] {
+  opacity: 0.5;
+  box-shadow: 0 0 10px lightgray;
+}
+input.ng-touched.ng-invalid.ng-dirty, textarea.ng-touched.ng-invalid.ng-dirty {
+  border: 2px solid red;
+}

@@ -1,0 +1,36 @@
+<div>
+  <div class="dark-background"></div>
+  <div class="modal">
+    <div class="head">
+      <span class="contact">Contact Us</span>
+      <span class="close-icon" (click)="close()">X</span>
+    </div>
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" ngModel required email>
+      </div>
+      <div>
+        <label for="text">Your letter</label>
+        <textarea name="text" ngModel id="text" cols="30" rows="5" id="text" required></textarea>
+      </div>
+
+      <div>
+        <label for="cities">Where are you from ?</label>
+        <input type="text" name="city" ngModel list="movies" id="cities" required/>
+        <datalist id="movies">
+          <select name="movies">
+            <option value="Vinnytsya">
+            <option value="Kyiv">
+            <option value="Odessa">
+            <option value="Lviv">
+            <option value="Kharkow">
+          </select>
+        </datalist>
+      </div>
+
+      <input type="submit" value="Send" class="details-button" [disabled]="!contactForm.valid">
+
+    </form>
+  </div>
+</div>
